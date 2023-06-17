@@ -1,0 +1,62 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+header, main, footer {
+  margin: 20px;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px;
+  margin: 5px 0;
+}
+
+header p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Section styles */
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+section ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  color: #888;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+}
