@@ -1,1 +1,0 @@
-# nipenpaul.github.io
