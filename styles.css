@@ -1,125 +1,92 @@
-body{
+body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container{
-  /*margin-top: 5em;*/
+.container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
+  padding: 2em;
 }
 
-.rightInfo{
-  max-width: 50vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-left: 10em;
+.leftImage,
+.rightInfo {
+  flex: 1;
+  padding: 1em;
+  text-align: center;
 }
 
-.leftImage{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  max-width: 40vw;
-  margin-right: 10em;
+.aboutInfo {
+  font-size: 18px;
+  margin-top: 1em;
 }
 
-.aboutInfo{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  font-size: 25px;
-  max-width: 70%;
-  margin-top: -1em;
-  margin-bottom: -1em;
+#header {
+  font-size: 40px;
 }
 
-#header{
-  font-size: 60px;
-}
-
-.strong{
+.strong {
   font-weight: 500;
 }
 
-button{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 25px;
+button {
+  font-size: 20px;
   color: white;
   background-color: #222121;
-  padding: .4em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  border-color: #707070;
+  padding: 0.4em 1.5em;
+  border: none;
   border-radius: 5px;
-  margin-top: 3em;
-}
-
-/* button:hover{
-  cursor: pointer;
-} */
-
-button:hover, i:hover{
+  margin-top: 1.5em;
   cursor: pointer;
 }
 
-a{
-  color: inherit;
+.icons {
+  margin-top: 1.5em;
 }
 
-.icons{
-  margin-top: 3em;
-}
-
-i{
+.icons i {
   margin-right: 30px;
 }
 
-#image{
+#image {
   max-width: 100%;
-  margin-top: 10em;
+  margin-top: 3em;
 }
 
-
-/* tablets */
-@media only screen and (max-width: 1200px){
-  .leftImage{
-    display: none;
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
   }
-
-  .rightInfo{
-    max-width: 100vw;
+  
+  .leftImage, .rightInfo {
+    max-width: 100%;
   }
 }
 
-/* phones */
-@media only screen and (max-width: 600px){
-  #header{
-    font-size: 40px;
+@media only screen and (max-width: 600px) {
+  #header {
+    font-size: 30px;
   }
 
-  .rightInfo{
-    max-width: 100vw;
-    margin-left: 3em;
-    font-size: 12.5px;
+  .rightInfo {
+    font-size: 12px;
   }
 
-  .aboutInfo{
-    font-size: 20px;
+  .aboutInfo {
+    font-size: 16px;
   }
 
-  .container{
-    margin-top: 0em;
+  button {
+    font-size: 18px;
   }
 
-  button{
-    font-size: 20px;
-  }
-
-  i{
+  .icons i {
     margin-right: 20px;
   }
 }
