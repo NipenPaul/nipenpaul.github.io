@@ -6,6 +6,12 @@ body {
   box-sizing: border-box;
 }
 
+.aboutInfo {
+  font-size: 18px;
+  margin-top: 1em;
+  line-height: 1.5;
+}
+
 a {
   color: black;
   text-decoration: none;
